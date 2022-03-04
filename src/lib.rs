@@ -1,10 +1,11 @@
 pub mod epoll_syscall;
 pub mod http_handle;
 
-pub use std::os::unix::io::{AsRawFd, RawFd};
+use std::os::unix::io::{AsRawFd, RawFd};
 
 
 /// 这是一个宏，用于方便地调用epoll的API: epoll_create、epoll_ctl、epoll_wait
+/// 
 /// 以epoll_wait为例：
 /// ```
 /// syscall!(epoll_wait(

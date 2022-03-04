@@ -1,3 +1,5 @@
+//! 处理 http 请求
+
 use std::io;
 use std::io::{Read, Write};
 use std::net::TcpStream;
@@ -33,7 +35,7 @@ impl RequestContext {
     /// 从TCP流中读取数据
     pub fn read_cb(&mut self, key: u64, epoll_fd: RawFd) -> io::Result<()> {
         let mut buf = [0u8; 4096];
-        // 将TCP流读取到byf中
+        // 将TCP流读取到buf中
         match self.stream.read(&mut buf) {
             Ok(_) => {
                 if let Ok(data) = std::str::from_utf8(&buf) {
