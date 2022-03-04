@@ -1,5 +1,5 @@
 use std::io;
-use crate::{AsRawFd, RawFd};
+use crate::RawFd;
 use crate::syscall;
 
 const READ_FLAGS: i32 = libc::EPOLLONESHOT | libc::EPOLLIN;
