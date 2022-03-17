@@ -12,7 +12,13 @@
 git clone https://github.com/night-cruise/rust-epoll-example.git
 ```
 
-使用 [Cargo](https://doc.rust-lang.org/cargo/) 运行程序：
+切换到项目目录：
+
+```
+cd rust-epoll-example
+```
+
+使用 [Cargo](https://doc.rust-lang.org/cargo/) 运行项目：
 
 ```
 cargo run
