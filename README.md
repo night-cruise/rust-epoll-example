@@ -1,6 +1,6 @@
 # rust-epoll-example
 
- [async-rust](https://github.com/night-cruise/async-rust) 中 `epoll server example` 一节的源代码。
+ [async-rust](https://github.com/night-cruise/async-rust) 中 [epoll server example](https://night-cruise.github.io/async-rust/Epoll-server-example.html) 章节的源代码。
 
 
 
